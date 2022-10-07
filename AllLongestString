@@ -1,0 +1,10 @@
+def solution(inputArray):
+    maxlen=-1
+    outputArray=[]
+    for i in inputArray:
+        if len(i)>maxlen:
+            maxlen=len(i)
+    for i in inputArray:
+        if len(i)==maxlen:
+            outputArray.append(i)
+    return outputArray       
